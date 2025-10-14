@@ -14,6 +14,8 @@ services:
       # SSL certificates (create these directories on host)
       - ./ssl/letsencrypt:/etc/letsencrypt:ro
       - ./ssl/nginx:/etc/nginx/ssl:ro
+      # Webroot for Let's Encrypt challenges
+      - ./ssl/www:/var/www/certbot
       # Logs
       - ./logs/nginx:/var/log/nginx
       # Custom nginx config (if you want to override)
