@@ -1,0 +1,48 @@
+# Git files
+.git
+.gitignore
+
+# Original Webflow exports (not needed in Docker)
+mainpage/
+about/
+services/
+our_cases/
+
+# Documentation
+*.md
+!DOCKER_DEPLOYMENT.md
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+tmp/
+temp/
+.tmp
+
+# Node modules (if any)
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker files (excluding compose files)
+.dockerignore
+
+# Backup files
+*.bak
+*.backup
+*~
