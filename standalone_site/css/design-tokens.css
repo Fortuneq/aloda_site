@@ -1,0 +1,337 @@
+/**
+ * ALODA Design System v1.0 - Design Tokens
+ * ==========================================
+ * CSS Custom Properties для всех стилевых параметров
+ * Использование: var(--color-primary), var(--space-lg), etc.
+ */
+
+:root {
+  /* ==========================================
+     COLORS
+     ========================================== */
+
+  /* Primary Palette */
+  --color-primary: #E63946;
+  --color-primary-hover: #D62839;
+  --color-primary-active: #C7202C;
+
+  --color-secondary: #9D4EDD;
+  --color-secondary-hover: #8C3FCC;
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #E63946 0%, #9D4EDD 100%);
+  --gradient-primary-soft: linear-gradient(135deg, rgba(230,57,70,0.8) 0%, rgba(157,78,221,0.8) 100%);
+
+  /* 3D Wave gradient (5-stop red to purple) */
+  --gradient-wave: linear-gradient(135deg,
+    #E63946 0%,
+    #C23A5E 25%,
+    #A03C76 50%,
+    #7D3E8E 75%,
+    #5B40A6 100%
+  );
+
+  /* Radial gradient for decorative elements */
+  --gradient-radial: radial-gradient(circle at center,
+    rgba(230,57,70,0.2) 0%,
+    rgba(157,78,221,0.2) 50%,
+    transparent 100%
+  );
+
+  /* Dark Theme Colors */
+  --color-bg-dark: #0A0A0A;
+  --color-bg-dark-elevated: #1A1A1A;
+  --color-bg-dark-hover: rgba(255,255,255,0.05);
+  --color-bg-dark-subtle: rgba(255,255,255,0.02);
+
+  --color-fg-dark: #FFFFFF;
+  --color-fg-dark-muted: rgba(255,255,255,0.7);
+  --color-fg-dark-subtle: rgba(255,255,255,0.4);
+  --color-fg-dark-disabled: rgba(255,255,255,0.3);
+
+  /* Light Theme Colors */
+  --color-bg-light: #F5F5F7;
+  --color-bg-light-elevated: #FFFFFF;
+  --color-bg-light-hover: rgba(0,0,0,0.02);
+  --color-bg-light-subtle: rgba(0,0,0,0.01);
+
+  --color-fg-light: #1A1A1A;
+  --color-fg-light-muted: rgba(0,0,0,0.7);
+  --color-fg-light-subtle: rgba(0,0,0,0.4);
+  --color-fg-light-disabled: rgba(0,0,0,0.3);
+
+  /* Semantic Colors */
+  --color-success: #06D6A0;
+  --color-success-hover: #05C294;
+  --color-warning: #FFB703;
+  --color-warning-hover: #F5AC00;
+  --color-danger: #E63946;
+  --color-danger-hover: #D62839;
+  --color-info: #118AB2;
+  --color-info-hover: #0F7A9D;
+
+  /* Border Colors */
+  --color-border-dark: rgba(255,255,255,0.1);
+  --color-border-dark-strong: rgba(255,255,255,0.2);
+  --color-border-light: rgba(0,0,0,0.08);
+  --color-border-light-strong: rgba(0,0,0,0.15);
+
+  /* ==========================================
+     SPACING (8pt grid)
+     ========================================== */
+
+  --space-0: 0;
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 80px;
+  --space-5xl: 120px;
+  --space-6xl: 160px;
+
+  /* ==========================================
+     TYPOGRAPHY
+     ========================================== */
+
+  /* Font Families */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-display: 'Inter Tight', 'Inter', sans-serif;
+  --font-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+
+  /* Font Sizes */
+  --text-xs: 12px;      /* 0.75rem - Fine print, captions */
+  --text-sm: 14px;      /* 0.875rem - Body small, labels */
+  --text-base: 16px;    /* 1rem - Body, buttons */
+  --text-lg: 18px;      /* 1.125rem - Lead text */
+  --text-xl: 20px;      /* 1.25rem - Subheadings */
+  --text-2xl: 24px;     /* 1.5rem - H4, prices */
+  --text-3xl: 32px;     /* 2rem - H3 */
+  --text-4xl: 40px;     /* 2.5rem - H2 */
+  --text-5xl: 48px;     /* 3rem - H2 large */
+  --text-6xl: 56px;     /* 3.5rem - H1 section */
+  --text-7xl: 72px;     /* 4.5rem - H1 hero */
+
+  /* Font Weights */
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --font-black: 900;
+
+  /* Line Heights */
+  --leading-none: 1;
+  --leading-tight: 1.1;
+  --leading-snug: 1.3;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.7;
+  --leading-loose: 2;
+
+  /* Letter Spacing */
+  --tracking-tighter: -0.04em;
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.02em;
+  --tracking-wider: 0.04em;
+
+  /* ==========================================
+     BORDER RADIUS
+     ========================================== */
+
+  --radius-none: 0;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 24px;
+  --radius-3xl: 32px;
+  --radius-full: 9999px;
+
+  /* ==========================================
+     SHADOWS
+     ========================================== */
+
+  /* Light Theme Shadows */
+  --shadow-xs: 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.06);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.08);
+  --shadow-xl: 0 12px 48px rgba(0,0,0,0.12);
+  --shadow-2xl: 0 24px 64px rgba(0,0,0,0.16);
+
+  /* Dark Theme Glows */
+  --glow-primary: 0 0 24px rgba(230,57,70,0.3);
+  --glow-primary-strong: 0 0 32px rgba(230,57,70,0.5);
+  --glow-secondary: 0 0 24px rgba(157,78,221,0.3);
+  --glow-card: 0 4px 32px rgba(230,57,70,0.15);
+
+  /* Inner Shadows */
+  --shadow-inner: inset 0 2px 4px rgba(0,0,0,0.06);
+
+  /* ==========================================
+     Z-INDEX SCALE
+     ========================================== */
+
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-modal-backdrop: 400;
+  --z-modal: 500;
+  --z-popover: 600;
+  --z-tooltip: 700;
+
+  /* ==========================================
+     TRANSITIONS & ANIMATIONS
+     ========================================== */
+
+  /* Durations */
+  --duration-instant: 0ms;
+  --duration-fast: 120ms;
+  --duration-base: 200ms;
+  --duration-slow: 300ms;
+  --duration-slower: 400ms;
+  --duration-slowest: 600ms;
+
+  /* Easing Functions */
+  --ease-linear: linear;
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.2, 0.8, 0.2, 1);  /* Main easing */
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  /* ==========================================
+     LAYOUT & GRID
+     ========================================== */
+
+  /* Container */
+  --container-max: 1280px;
+  --container-padding: 24px;
+  --container-padding-lg: 48px;
+
+  /* Grid gaps */
+  --gap-sm: 16px;
+  --gap-md: 24px;
+  --gap-lg: 32px;
+  --gap-xl: 48px;
+
+  /* ==========================================
+     BREAKPOINTS (for reference in JS)
+     ========================================== */
+
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  /* ==========================================
+     OPACITY SCALE
+     ========================================== */
+
+  --opacity-0: 0;
+  --opacity-10: 0.1;
+  --opacity-20: 0.2;
+  --opacity-30: 0.3;
+  --opacity-40: 0.4;
+  --opacity-50: 0.5;
+  --opacity-60: 0.6;
+  --opacity-70: 0.7;
+  --opacity-80: 0.8;
+  --opacity-90: 0.9;
+  --opacity-100: 1;
+
+  /* ==========================================
+     BACKDROP BLUR
+     ========================================== */
+
+  --blur-none: 0;
+  --blur-sm: 4px;
+  --blur-md: 8px;
+  --blur-lg: 12px;
+  --blur-xl: 16px;
+  --blur-2xl: 24px;
+}
+
+/* ==========================================
+   THEME VARIANTS (Light/Dark overrides)
+   ========================================== */
+
+/* Light theme overrides (when applied to body or specific sections) */
+[data-theme="light"],
+.theme-light {
+  --color-bg-primary: var(--color-bg-light);
+  --color-bg-elevated: var(--color-bg-light-elevated);
+  --color-bg-hover: var(--color-bg-light-hover);
+
+  --color-fg-primary: var(--color-fg-light);
+  --color-fg-muted: var(--color-fg-light-muted);
+  --color-fg-subtle: var(--color-fg-light-subtle);
+
+  --color-border: var(--color-border-light);
+  --color-border-strong: var(--color-border-light-strong);
+
+  --shadow-default: var(--shadow-md);
+}
+
+/* Dark theme overrides (default) */
+[data-theme="dark"],
+.theme-dark,
+:root {
+  --color-bg-primary: var(--color-bg-dark);
+  --color-bg-elevated: var(--color-bg-dark-elevated);
+  --color-bg-hover: var(--color-bg-dark-hover);
+
+  --color-fg-primary: var(--color-fg-dark);
+  --color-fg-muted: var(--color-fg-dark-muted);
+  --color-fg-subtle: var(--color-fg-dark-subtle);
+
+  --color-border: var(--color-border-dark);
+  --color-border-strong: var(--color-border-dark-strong);
+
+  --shadow-default: var(--glow-card);
+}
+
+/* ==========================================
+   PREFERS COLOR SCHEME (system preference)
+   ========================================== */
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) {
+    --color-bg-primary: var(--color-bg-light);
+    --color-bg-elevated: var(--color-bg-light-elevated);
+    --color-fg-primary: var(--color-fg-light);
+    --color-fg-muted: var(--color-fg-light-muted);
+    --color-border: var(--color-border-light);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --color-bg-primary: var(--color-bg-dark);
+    --color-bg-elevated: var(--color-bg-dark-elevated);
+    --color-fg-primary: var(--color-fg-dark);
+    --color-fg-muted: var(--color-fg-dark-muted);
+    --color-border: var(--color-border-dark);
+  }
+}
+
+/* ==========================================
+   REDUCED MOTION (accessibility)
+   ========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-instant: 0ms;
+    --duration-fast: 0ms;
+    --duration-base: 0ms;
+    --duration-slow: 0ms;
+    --duration-slower: 0ms;
+    --duration-slowest: 0ms;
+  }
+}
